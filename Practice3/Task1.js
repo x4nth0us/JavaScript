@@ -8,13 +8,13 @@ class MyError extends Error{
 function operation(a, b, c){
     try {
         if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
-            throw new MyError("Все аргументы должны быть числами!");
+            throw new MyError("args are not numbers");
         }
 
         return(a + b + c)
 
     } catch(error){
-        console.error(error.name + ' - ' + error.message);
+        console.log(error.name + ' - ' + error.message);
     }
 }
 

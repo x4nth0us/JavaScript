@@ -1,4 +1,5 @@
-import { PI, E } from './const.mjs';
+import { PI } from './const.mjs';
+import E from './const.mjs';
 
 export function addition(a, b) {
     return a + b;

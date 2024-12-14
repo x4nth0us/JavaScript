@@ -15,3 +15,8 @@ console.log(user2name, user2age, user2city);
 console.log(user3name, user3age, user3city);
 
 user1age = 18;
+
+for (const i = 1; i < 1; ){
+
+}
+console.log(i)

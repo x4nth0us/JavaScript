@@ -5,7 +5,7 @@ console.log(arr[4]);
 
 arr[1] = "sun";
 
-let arr2 = [...arr];
+let arr2 = arr;
 
 console.log(arr);
 console.log(arr2);

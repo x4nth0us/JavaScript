@@ -4,6 +4,8 @@ names.add('ALice')
 names.add('Paul')
 names.add('Mike')
 
+console.log(names.values().value)
+
 let first = names.values().next().value;
 names.delete(first)
 

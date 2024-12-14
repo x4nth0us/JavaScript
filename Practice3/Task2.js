@@ -1,6 +1,8 @@
 function getdata(callback){
+    
     setTimeout(() => {
         callback('hello')
+
     }, 1000);
 }
 
@@ -48,3 +50,21 @@ async function asyncgetdata() {
 
 asyncgetdata();
 
+function asyncfunction(x) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(x)  
+        }, 1000); 
+    });
+}
+
+async function parallel(params) {
+    try {
+        const promises = [asyncfunction(1), asyncfunction(2), asyncfunction(3)];
+        console.log(await Promise.all(promises));
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+parallel();
